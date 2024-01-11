@@ -3,7 +3,7 @@
     "@kava-labs/javascript-sdk": "^9.0.0-beta-5",
     "@cosmjs/proto-signing": "^0.28.0",
     "@cosmjs/stargate": "^0.28.0",
-    "@cosmjs/cosmwasm-stargate": "^0.28.0",
+    "@cosmjs/cosmwasm-stargate": "^0.32.2",
     "axios": "^0.27.2",
     "coingecko-api": "^1.0.10",
     "dotenv": "^8.2.0",
