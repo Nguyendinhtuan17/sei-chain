@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@kava-labs/javascript-sdk": "^9.0.0-beta-5",
-    "@cosmjs/proto-signing": "^0.28.0",
+    "@cosmjs/proto-signing": "^0.32.2",
     "@cosmjs/stargate": "^0.28.0",
     "@cosmjs/cosmwasm-stargate": "^0.28.0",
     "axios": "^0.27.2",
