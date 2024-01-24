@@ -37,7 +37,7 @@ RUN LEDGER_ENABLED=false BUILD_TAGS=muslc LINK_STATICALLY=true make build -B \
   && (file /code/build/seid | grep "statically linked")
 
 # --------------------------------------------------------
-FROM alpine:3.18
+FROM alpine:3
 
 COPY --from=go-builder /code/build/seid /usr/bin/seid
 
