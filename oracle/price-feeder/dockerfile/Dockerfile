@@ -18,7 +18,7 @@ ARG VERSION=main
 RUN git checkout ${VERSION}
 RUN COMMIT="$(git rev-parse HEAD)"; BUILD_TAGS=muslc CGO_ENABLED=1 go install -mod=readonly -tags "muslc" -ldflags "-X price-feeder/cmd.Version=${VERSION}-$COMMIT -X price-feeder/cmd.Commit=$COMMIT" ./cmd/seid
 
-FROM alpine:latest
+FROM alpine:3.19.1
 COPY --from=oracle /go/bin/price-feeder /usr/local/bin
 COPY --from=sei /go/bin/seid /usr/local/bin
 RUN apk add --no-cache bash
